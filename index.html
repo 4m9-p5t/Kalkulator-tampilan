@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator gampang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator" role="application" aria-label="Calculator">
+        <div class="display-wrapper" aria-live="polite" aria-atomic="true" id="display" role="textbox" aria-readonly="true" tabindex="0">
+            <div class="clock-indicator" aria-hidden="true"></div>
+            0
+        </div>
+        <div class="buttons">
+            <button type="button" aria-label="Clear Entry" data-action="ce">CE</button>
+            <button type="button" aria-label="Clear All" data-action="c">C</button>
+            <button type="button" aria-label="Delete last character" data-action="del">Del</button>
+            <button type="button" aria-label="Parentheses" data-action="parenthesis">( )</button>
+
+            <button type="button" aria-label="Toggle sign" data-action="toggle-sign">+/-</button>
+            <button type="button" aria-label="Percent" data-action="percent">%</button>
+            <button type="button" aria-label="Square root" data-action="sqrt">√</button>
+            <button type="button" aria-label="Square" data-action="sqr">x²</button>
+
+            <button type="button" aria-label="Number 7" data-number="7">7</button>
+            <button type="button" aria-label="Number 8" data-number="8">8</button>
+            <button type="button" aria-label="Number 9" data-number="9">9</button>
+            <button type="button" aria-label="Divide" data-operator="/">÷</button>
+
+            <button type="button" aria-label="Number 4" data-number="4">4</button>
+            <button type="button" aria-label="Number 5" data-number="5">5</button>
+            <button type="button" aria-label="Number 6" data-number="6">6</button>
+            <button type="button" aria-label="Multiply" data-operator="*">×</button>
+
+            <button type="button" aria-label="Number 1" data-number="1">1</button>
+            <button type="button" aria-label="Number 2" data-number="2">2</button>
+            <button type="button" aria-label="Number 3" data-number="3">3</button>
+            <button type="button" aria-label="Minus" data-operator="-">-</button>
+
+            <button type="button" aria-label="Calculate" class="equal" data-action="equal">=</button>
+            <button type="button" aria-label="Number 0" data-number="0">0</button>
+            <button type="button" aria-label="Decimal point" data-number=".">.</button>
+            <button type="button" aria-label="Plus" data-operator="+">+</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
